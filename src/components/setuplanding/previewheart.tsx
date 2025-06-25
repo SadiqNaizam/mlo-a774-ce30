@@ -34,6 +34,7 @@ const PreviewHeart: React.FC<PreviewHeartProps> = ({ className }) => {
   return (
     <div className={cn("flex flex-col items-center gap-6 text-center", className)}>
       <motion.div
+        className="rotate-90"
         animate={{ scale: [1, 1.05, 1] }}
         transition={{
           duration: 1.5,
