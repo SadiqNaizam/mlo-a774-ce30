@@ -1,14 +1,21 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from 'react';
+import MainAppLayout from '../components/layout/MainAppLayout';
+import PreviewHeart from '../components/SetupLanding/PreviewHeart';
+import FeatureList from '../components/SetupLanding/FeatureList';
 
-const Index = () => {
+/**
+ * Setup Landing Page
+ * 
+ * This page is displayed during the initial project setup, showing a preview status
+ * and a list of key features or setup steps.
+ */
+const IndexPage: React.FC = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <MainAppLayout>
+      <PreviewHeart />
+      <FeatureList />
+    </MainAppLayout>
   );
 };
 
-export default Index;
+export default IndexPage;
